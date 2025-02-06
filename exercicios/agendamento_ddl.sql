@@ -30,7 +30,7 @@ CREATE TABLE Paciente (
  CREATE TABLE Medico_especialidade (
    cpf_medico VARCHAR(10),
    id_especialidade INT,
-   PRIMARY KEY (crm_medico, id_especialidade),
+   PRIMARY KEY (cpf_medico, id_especialidade),
    FOREIGN KEY (cpf_medico) REFERENCES Medico(cpf_pessoa),
    FOREIGN KEY (id_especialidade) REFERENCES Especialidade(id)
   );
